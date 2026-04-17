@@ -1,0 +1,863 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Plantify</title>
+    <meta
+      name="description"
+      content="Learn about Plantify, your trusted source for beautiful plants. Discover our mission to bring nature closer to your home with fresh plants and care tips."
+    />
+    <meta
+      name="keywords"
+      content="about Plantify, plant store, plant care, indoor plants, outdoor plants"
+    />
+    <meta name="author" content="Plantify" />
+    <meta name="robots" content="index, follow" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="About Us - Plantify" />
+    <meta
+      property="og:description"
+      content="Learn about Plantify, your trusted source for beautiful plants. Discover our mission to bring nature closer to your home with fresh plants and care tips."
+    />
+    <meta property="og:image" content="../../images/heroSEctionHomepage.jpg" />
+    <meta property="og:url" content="https://plantify.com/about" />
+    <meta property="og:type" content="website" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="About Us - Plantify" />
+    <meta
+      name="twitter:description"
+      content="Learn about Plantify, your trusted source for beautiful plants. Discover our mission to bring nature closer to your home with fresh plants and care tips."
+    />
+    <meta name="twitter:image" content="../../images/heroSEctionHomepage.jpg" />
+    <link rel="stylesheet" href="../output.css" />
+    <script
+      src="https://kit.fontawesome.com/5ce14b4205.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      @keyframes marquee {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-50%);
+        }
+      }
+      .animate-marquee {
+        animation: marquee 18s linear infinite;
+      }
+    </style>
+  </head>
+  <body class="font-sport">
+    <header
+      class="bg-white dark:bg-green-950 border-b z-99 border-gray-100 w-full fixed top-0"
+    >
+      <nav class="bg-white dark:bg-green-950 px-4 container mx-auto z-50">
+        <div class="max-w-7xl mx-auto h-16 flex items-center justify-between">
+          <!-- Logo -->
+          <a href="#" class="flex items-center gap-2">
+            <div
+              class="w-8 h-8 bg-primary rounded-full flex items-center justify-center shrink-0"
+            >
+              <svg
+                class="w-[18px] h-[18px]"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M12 22V12M12 12C12 12 7 10 5 6c4 0 7 2 7 6zM12 12c0 0 5-2 7-6-4 0-7 2-7 6z"
+                />
+              </svg>
+            </div>
+            <span
+              class="text-[18px] font-semibold dark:text-white text-gray-900 tracking-tight"
+            >
+              Plantify
+            </span>
+          </a>
+
+          <!-- Desktop links -->
+          <div class="hidden md:flex items-center gap-1">
+            <a
+              href="/index.html"
+              class="text-lg px-3 py-1.5 rounded-lg text-gray-500 dark:text-gray-300 hover:text-gray-900 hover:bg-gray-100 transition-colors"
+              >Home</a
+            >
+            <a
+              href="plantPage.html"
+              class="text-lg px-3 py-1.5 rounded-lg text-gray-500 dark:text-gray-300 hover:text-gray-900 hover:bg-gray-100 transition-colors"
+            >
+              Plants
+            </a>
+            <a
+              href=""
+              class="text-lg px-3 py-1.5 font-bold rounded-lg text-primary dark:text-green-300 dark:text-white-dark font-medium"
+              >About Us</a
+            >
+            <a
+              href="Contact.html"
+              class="text-lg px-3 py-1.5 rounded-lg text-gray-500 dark:text-gray-300 hover:text-gray-900 hover:bg-gray-100 transition-colors"
+              >Contact</a
+            >
+          </div>
+
+          <!-- Desktop actions -->
+          <div class="hidden md:flex items-center gap-2">
+            <button
+              id="toggleTheme"
+              type="button"
+              class="relative inline-flex h-12 w-12 items-center justify-center rounded-full bg-gray-200 dark:bg-gray-700 shadow-sm transition-colors duration-500"
+              aria-label="Toggle dark mode"
+            >
+              <!-- SUN -->
+              <svg
+                class="absolute h-7 w-7 fill-yellow-400 transition-all duration-300 opacity-100 scale-100 rotate-0 dark:opacity-0 dark:scale-75 dark:rotate-90"
+                viewBox="0 -960 960 960"
+              >
+                <path
+                  d="M440-800v-120h80v120h-80Zm0 760v-120h80v120h-80Zm360-400v-80h120v80H800Zm-760 0v-80h120v80H40Zm708-252-56-56 70-72 58 58-72 70ZM198-140l-58-58 72-70 56 56-70 72Zm564 0-70-72 56-56 72 70-58 58ZM212-692l-72-70 58-58 70 72-56 56Zm268 452q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Z"
+                />
+              </svg>
+
+              <!-- MOON -->
+              <svg
+                class="absolute h-7 w-7 fill-white transition-all duration-300 opacity-0 scale-75 rotate-90 dark:opacity-100 dark:scale-100 dark:rotate-0"
+                viewBox="0 -960 960 960"
+              >
+                <path
+                  d="M484-80q-84 0-157.5-32t-128-86.5Q144-253 112-326.5T80-484q0-146 93-257.5T410-880q-18 99 11 193.5T521-521q71 71 165.5 100T880-410q-26 144-138 237T484-80Z"
+                />
+              </svg>
+            </button>
+            <a
+              href="./signup.html"
+              class="text-lg text-white bg-primary hover:bg-primary-dark font-medium px-4 py-2 rounded-full transition-colors"
+            >
+              Sign Up
+            </a>
+          </div>
+
+          <!-- Hamburger -->
+          <button
+            id="hamburger"
+            onclick="toggleMenu()"
+            class="md:hidden flex flex-col gap-[5px] p-2 rounded-lg hover:bg-gray-100 transition-colors"
+          >
+            <span
+              id="bar1"
+              class="block w-5 h-[1.5px] bg-gray-900 dark:bg-white transition-all duration-300 origin-center"
+            ></span>
+            <span
+              id="bar2"
+              class="block w-5 h-[1.5px] bg-gray-900 dark:bg-white transition-all duration-300 origin-center"
+            ></span>
+            <span
+              id="bar3"
+              class="block w-5 h-[1.5px] bg-gray-900 dark:bg-white transition-all duration-300 origin-center"
+            ></span>
+          </button>
+        </div>
+
+        <!-- Mobile menu -->
+        <div
+          id="mobileMenu"
+          class="md:hidden overflow-hidden max-h-0 transition-all duration-300 ease-in-out border-t border-gray-100"
+        >
+          <div class="px-4 pt-3 pb-5 flex flex-col gap-1">
+            <a
+              href="/index.html"
+              class="text-lg px-3 py-1.5 rounded-lg text-gray-500 dark:text-gray-300 hover:text-gray-900 hover:bg-gray-100 transition-colors"
+              >Home</a
+            >
+            <a
+              href="plantPage.html"
+              class="text-lg px-3 py-1.5 rounded-lg text-gray-500 dark:text-gray-300 hover:text-gray-900 hover:bg-gray-100 transition-colors"
+            >
+              Plants
+            </a>
+            <a
+              href=""
+              class="text-lg px-3 py-1.5 font-bold rounded-lg text-primary dark:text-green-300 dark:text-white-dark font-medium"
+              >About Us</a
+            >
+            <a
+              href="Contact.html"
+              class="text-lg px-3 py-1.5 rounded-lg text-gray-500 dark:text-gray-300 hover:text-gray-900 hover:bg-gray-100 transition-colors"
+              >Contact</a
+            >
+            <hr class="my-2 border-gray-100" />
+            <div class="flex flex-col gap-2 px-1">
+              <a
+                href="./signup.html"
+                class="text-lg text-white bg-primary hover:bg-primary-dark font-medium px-4 py-3 rounded-full transition-colors"
+              >
+                Sign Up
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- <div class="overflow-hidden whitespace-nowrap bg-green-50 py-">
+        <div class="inline-flex animate-marquee">
+        
+          <span class="inline-flex gap-12">
+            <span class="bebas text-green-800 text-lg tracking-widest"
+              >SUCCULENTS</span
+            >
+            <span class="bebas text-green-800 text-lg tracking-widest">✦</span>
+            <span class="bebas text-green-800 text-lg tracking-widest"
+              >FICUS</span
+            >
+            <span class="bebas text-green-800 text-lg tracking-widest">✦</span>
+            <span class="bebas text-green-800 text-lg tracking-widest"
+              >MONSTERA</span
+            >
+            <span class="bebas text-green-800 text-lg tracking-widest">✦</span>
+            <span class="bebas text-green-800 text-lg tracking-widest"
+              >CACTUS</span
+            >
+            <span class="bebas text-green-800 text-lg tracking-widest">✦</span>
+            <span class="bebas text-green-800 text-lg tracking-widest"
+              >ORCHIDS</span
+            >
+            <span class="bebas text-green-800 text-lg tracking-widest">✦</span>
+            <span class="bebas text-green-800 text-lg tracking-widest"
+              >FERNS</span
+            >
+            <span class="bebas text-green-800 text-lg tracking-widest">✦</span>
+            <span class="bebas text-green-800 text-lg tracking-widest"
+              >HERBS</span
+            >
+            <span class="bebas text-green-800 text-lg tracking-widest">✦</span>
+          </span>
+
+          <span class="inline-flex gap-12">
+            <span class="bebas ml-8 text-green-800 text-lg tracking-widest"
+              >SUCCULENTS</span
+            >
+            <span class="bebas text-green-800 text-lg tracking-widest">✦</span>
+            <span class="bebas text-green-800 text-lg tracking-widest"
+              >FICUS</span
+            >
+            <span class="bebas text-green-800 text-lg tracking-widest">✦</span>
+            <span class="bebas text-green-800 text-lg tracking-widest"
+              >MONSTERA</span
+            >
+            <span class="bebas text-green-800 text-lg tracking-widest">✦</span>
+            <span class="bebas text-green-800 text-lg tracking-widest"
+              >CACTUS</span
+            >
+            <span class="bebas text-green-800 text-lg tracking-widest">✦</span>
+            <span class="bebas text-green-800 text-lg tracking-widest"
+              >ORCHIDS</span
+            >
+            <span class="bebas text-green-800 text-lg tracking-widest">✦</span>
+            <span class="bebas text-green-800 text-lg tracking-widest"
+              >FERNS</span
+            >
+            <span class="bebas text-green-800 text-lg tracking-widest">✦</span>
+            <span class="bebas text-green-800 text-lg tracking-widest"
+              >HERBS</span
+            >
+            <span class="bebas text-green-800 text-lg tracking-widest">✦</span>
+          </span>
+        </div>
+      </div> -->
+    </header>
+
+    <main class="z-0 dark:bg-green-950 overflow-x-hidden">
+      <section
+        class="relative pt-24 dark:bg-green-950 lg:h-screen flex items-center justify-center overflow-hidden bg-[#f6f9f6]"
+      >
+        <!-- 🌫️ BACKGROUND GRADIENT -->
+        <!-- <div
+          class="absolute inset-0 dark:bg-gree bg-gradient-to-br from-green-50 via-white to-green-100"
+        ></div> -->
+
+        <!-- ✨ FLOATING BLURS -->
+        <div
+          class="absolute top-[-100px] left-[-100px] w-[400px] h-[400px] bg-green-300/30 rounded-full blur-[140px]"
+        ></div>
+        <div
+          class="absolute bottom-[-100px] right-[-100px] w-[400px] h-[400px] bg-green-500/20 rounded-full blur-[140px]"
+        ></div>
+
+        <div
+          class="relative container max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-20"
+        >
+          <!-- 🧠 LEFT CONTENT -->
+          <div class="max-w-xl text-center lg:text-left space-y-6">
+            <!-- badge -->
+            <div
+              class="inline-flex items-center gap-2 px-4 py-1.5 bg-white/70 backdrop-blur-md border border-green-100 rounded-full text-sm font-medium text-green-700 shadow-sm"
+            >
+              🌿 Sustainable Living
+            </div>
+
+            <!-- heading -->
+            <h1
+              class="text-primary dark:text-white max-md:text-4xl text-[70px] font-bold leading-tight"
+            >
+              Nature Meets
+              <br />
+              <span class="">Modern Living</span>
+            </h1>
+
+            <!-- description -->
+            <p
+              class="text-[24px] max-lg:w-2xl max-lg:text-center max-sm:w-[300px] text-text-description max-sm:text-[14px] max-w-3xl dark:text-cool-sky max-lg:text-[20px] font-['Poppins-Light',_sans-serif] text-line-height-24"
+            >
+              Transform your space with curated plants designed to bring
+              elegance, calm, and life into your everyday environment.
+            </p>
+
+            <!-- buttons -->
+            <div
+              class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-3"
+            >
+              <a href="#products">
+                <button
+                  class="px-8 py-3 bg-primary text-white rounded-full font-semibold shadow-xl hover:scale-105 hover:bg-green-700 transition-all duration-300"
+                >
+                  Explore Plants
+                </button>
+              </a>
+
+              <a href="#about">
+                <button
+                  class="px-8 py-3 backdrop-blur-md bg-white/70 border border-gray-200 text-gray-700 rounded-full font-semibold hover:border-green-600 hover:text-green-600 transition-all duration-300"
+                >
+                  Learn More
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <!-- 🌿 RIGHT VISUAL -->
+          <div class="relative flex items-center justify-center">
+            <!-- glow behind -->
+            <div
+              class="absolute w-[350px] h-[350px] bg-green-300/30 rounded-full blur-[120px]"
+            ></div>
+
+            <!-- main image -->
+            <img
+              src="/images/01.webp"
+              alt="Plant"
+              class="relative z-10 w-[320px] md:w-[460px] rounded-3xl shadow-2xl object-cover transition duration-500 hover:scale-105"
+            />
+
+            <!-- glass card 1 -->
+            <div
+              class="absolute z-10 top-6 -left-10 bg-white/70 backdrop-blur-lg border border-white/50 px-5 py-3 rounded-2xl shadow-lg"
+            >
+              <p class="text-xs z-10 text-gray-500">Air Quality</p>
+              <p class="font-bold z-10 text-green-600">Improved 🌱</p>
+            </div>
+
+            <!-- glass card 2 -->
+            <div
+              class="absolute z-10 bottom-6 -right-10 bg-white/70 backdrop-blur-lg border border-white/50 px-5 py-3 rounded-2xl shadow-lg"
+            >
+              <p class="text-xs text-gray-500">Starting From</p>
+              <p class="font-bold text-gray-900">$12.99</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="menu"
+        class="max-w-7xl mx-auto px-4 container py-10 text-center"
+        data-aos="fade-up"
+        data-aos-delay="0"
+      >
+        <h2
+          class="max-md:text-4xl dark:text-white text-[50px] font-bold text-primary mb-5"
+          data-aos="fade-down"
+          data-aos-delay="100"
+        >
+          Daily Green Picks
+        </h2>
+
+        <p
+          class="text-text-description dark:text-white mb-5 text-xl max-w-2xl mx-auto"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          Explore handpicked plants designed to refresh your home with greenery,
+          elegance, and a touch of nature every day.
+        </p>
+
+        <!-- GRID -->
+        <div
+          class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 [grid-auto-rows:160px] sm:[grid-auto-rows:208px] md:[grid-auto-rows:256px]"
+          data-aos="fade-up"
+          data-aos-delay="250"
+        >
+          <!-- Image 1 -->
+          <div
+            class="overflow-hidden rounded-xl"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <img
+              src="/images/01.webp"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+
+          <!-- Image 2 -->
+          <div
+            class="overflow-hidden rounded-xl"
+            data-aos="zoom-in"
+            data-aos-delay="350"
+          >
+            <img
+              src="/images/02.jpg"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+
+          <!-- Image 3 (tall) -->
+          <div
+            class="overflow-hidden rounded-xl md:row-span-2"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <img
+              src="/images/04.webp"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+
+          <!-- Image 4 -->
+          <div
+            class="overflow-hidden rounded-xl"
+            data-aos="zoom-in"
+            data-aos-delay="450"
+          >
+            <img
+              src="/images/05.png"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+
+          <!-- Image 5 (wide) -->
+          <div
+            class="overflow-hidden rounded-xl lg:col-span-2"
+            data-aos="fade-right"
+            data-aos-delay="500"
+          >
+            <img
+              src="/images/groupPlant1.png"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+
+          <!-- Image 6 -->
+          <div
+            class="overflow-hidden rounded-xl"
+            data-aos="zoom-in"
+            data-aos-delay="550"
+          >
+            <img
+              src="/images/11.png"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- flex-->
+      <!-- <div
+        class="container mx-auto flex justify-between px-6 max-w-7xl gap-6 my-12"
+      >
+        <div
+          class="group rotate-6 relative rounded-2xl overflow-hidden shadow-sm border-cool-sky"
+        >
+          <img
+            src="/images/01.webp"
+            class="h-60 w-[300px] object-cover rounded-[20px] shadow-sm border-cool-sky rounded-[20px]"
+          />
+        </div>
+
+        <div
+          class="group -rotate-6 relative rounded-2xl overflow-hidden shadow-sm border-cool-sky"
+        >
+          <img
+            src="/images/02.jpg"
+            class="h-60 w-[300px] object-cover rounded-[20px] shadow-sm border-cool-sky rounded-[20px]"
+          />
+        </div>
+
+        <div
+          class="group rotate-6 relative rounded-2xl overflow-hidden shadow-sm border-cool-sky"
+        >
+          <img
+            src="/images/03.jpg"
+            class="h-60 w-[300px] object-cover rounded-[20px] shadow-sm border-cool-sky rounded-[20px]"
+          />
+        </div>
+
+        <div
+          class="group -rotate-6 relative rounded-2xl overflow-hidden shadow-sm border-cool-sky"
+        >
+          <img
+            src="/images/04.webp"
+            class="h-60 w-[300px] object-cover rounded-[20px] shadow-sm border-cool-sky rounded-[20px]"
+          />
+        </div>
+      </div> -->
+      <section
+        class="relative py-8 max-lg:pt-20 max-lg:pb-8 container max-w-7xl mx-auto px-4 flex lg:flex-row max-lg:flex-col items-center justify-center"
+      >
+        <div
+          class="flex max-sm:items-center max-lg:items-center max-lg:text-center flex-col gap-8"
+        >
+          <h2
+            data-aos="fade-right"
+            data-aos-delay="250"
+            class="text-primary dark:text-white max-md:text-4xl text-[50px] font-bold leading-tight"
+          >
+            Why Choose <br />
+            <span class="dark:text-secondary-dark">Plantify</span>?
+          </h2>
+
+          <p
+            data-aos="fade-right"
+            data-aos-delay="50"
+            class="text-[24px] max-lg:w-2xl max-lg:text-center max-sm:w-[300px] text-text-description max-sm:text-[14px] max-w-3xl dark:text-cool-sky max-lg:text-[20px] font-['Poppins-Light',_sans-serif] text-line-height-24"
+          >
+            GreenPetals helps you bring nature into your space with carefully
+            selected plants that add freshness to your home.
+          </p>
+
+          <button
+            data-aos="fade-right"
+            data-aos-delay="450"
+            class="group mb-8 max-sm:mb-4 dark:bg-cool-sky shadow-md w-fit relative inline-flex h-12 items-center justify-center overflow-hidden rounded-full bg-primary px-6 font-medium transition duration-200 hover:scale-110"
+          >
+            <span class="flex dark:text-primary text-white items-center">
+              EXPLORE PLANTS
+            </span>
+          </button>
+        </div>
+        <div data-aos="fade-left" data-aos-delay="350">
+          <img
+            class="w-[550px] block max-sm:mb-4 rounded-[28px]"
+            src="/images/strelitzia plant.gif"
+            alt="storySetImg "
+          />
+          <!-- <img
+            class="w-[550px] hidden dark:block max-sm:mb-4 rounded-[28px]"
+            src="{storySetImgDark}"
+            alt="storySetImg "
+          /> -->
+        </div>
+      </section>
+      <section class="max-w-7xl container mx-auto px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+          <!-- Item 1 -->
+          <div
+            class="p-6 rounded-2xl bg-white shadow-sm hover:shadow-md transition"
+          >
+            <div
+              class="w-12 h-12 mx-auto mb-4 flex items-center justify-center bg-primary/10 text-primary rounded-full"
+            >
+              🌿
+            </div>
+            <h3 class="font-semibold text-lg text-gray-800 mb-1">
+              Fresh Plants
+            </h3>
+            <p class="text-sm text-gray-500">Carefully selected for quality</p>
+          </div>
+
+          <!-- Item 2 -->
+          <div
+            class="p-6 rounded-2xl bg-white shadow-sm hover:shadow-md transition"
+          >
+            <div
+              class="w-12 h-12 mx-auto mb-4 flex items-center justify-center bg-primary/10 text-primary rounded-full"
+            >
+              💧
+            </div>
+            <h3 class="font-semibold text-lg text-gray-800 mb-1">Easy Care</h3>
+            <p class="text-sm text-gray-500">Simple maintenance for everyone</p>
+          </div>
+
+          <!-- Item 3 -->
+          <div
+            class="p-6 rounded-2xl bg-white shadow-sm hover:shadow-md transition"
+          >
+            <div
+              class="w-12 h-12 mx-auto mb-4 flex items-center justify-center bg-primary/10 text-primary rounded-full"
+            >
+              🌱
+            </div>
+            <h3 class="font-semibold text-lg text-gray-800 mb-1">
+              Natural Style
+            </h3>
+            <p class="text-sm text-gray-500">Perfect for modern spaces</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="py-20 bg-primary text-white text-center">
+        <div class="max-w-3xl mx-auto px-6 space-y-6">
+          <p class="text-2xl md:text-3xl font-light leading-relaxed">
+            “Bring nature closer. Live calmer. Feel better.”
+          </p>
+          <div class="w-12 h-[2px] bg-white/60 mx-auto"></div>
+          <p class="text-sm text-white/70">— GreenPetals</p>
+        </div>
+      </section> -->
+      <section
+        id="mentor"
+        class="pt-3 my-5 md:px-8 sm:px-2 max-sm:px-3"
+        data-aos="fade-up"
+        data-aos-delay="0"
+      >
+        <!-- Title + Ruler -->
+        <!-- <h2
+          class="font-bold text-center font-primary text-2xl sm:text-3xl md:text-5xl lg:text-[64px] text-primary mb-2"
+          data-aos="fade-down"
+          data-aos-delay="100"
+        >
+          Green Plant
+        </h2> -->
+
+        <div
+          class="w-full flex justify-center mb-10"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div
+            class="mt-4 w-[150px] sm:w-[200px] md:w-[300px] lg:w-[450px] h-[2px] bg-gray-400 mx-auto"
+          ></div>
+        </div>
+
+        <!-- Content -->
+        <div class="container max-w-7xl relative mx-auto md:px-4">
+          <div
+            class="bg-primary overflow-hidden relative flex items-center md:gap-x-8 max-md:gap-x-4 p-2.5 rounded-[28px]"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <!-- Image -->
+            <div data-aos="fade-right" data-aos-delay="400">
+              <img
+                src="/images/05.png"
+                alt="souheng's image"
+                class="rounded-[18px] w-[300px] lg:w-[350px] max-lg:w-[300px] max-md:w-[150px]"
+              />
+            </div>
+
+            <!-- Info -->
+            <div class="flex flex-col gap-y-4 md:gap-y-6 lg:gap-y-8">
+              <h2
+                class="text-6xl font-bold max-lg:text-4xl max-sm:text-2xl text-white"
+                data-aos="fade-left"
+                data-aos-delay="500"
+              >
+                GreenPetals Garden
+              </h2>
+
+              <p
+                class="max-lg:hidden lg:block text-white w-[85%]"
+                data-aos="fade-left"
+                data-aos-delay="600"
+              >
+                A curated collection of vibrant plants designed to bring
+                freshness, beauty, and a calming natural atmosphere into your
+                home.
+              </p>
+
+              <p
+                class="lg:hidden text-accent max-md:hidden"
+                data-aos="fade-left"
+                data-aos-delay="600"
+              >
+                Fresh plants that bring beauty and a calming natural vibe to
+                your space.
+              </p>
+
+              <p
+                class="md:hidden text-accent"
+                data-aos="fade-left"
+                data-aos-delay="600"
+              >
+                Fresh and beautiful plants for your space.
+              </p>
+              <!-- Social Icons -->
+              <!-- <div class="flex gap-4" data-aos="fade-up" data-aos-delay="700">
+                <a
+                  class="w-7 xs:w-8 sm:w-9 md:w-10 h-7 xs:h-8 sm:h-9 md:h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition"
+                >
+                  <i class="fab fa-github text-primary"></i>
+                </a>
+
+                <a
+                  class="w-7 xs:w-8 sm:w-9 md:w-10 h-7 xs:h-8 sm:h-9 md:h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition"
+                >
+                  <i class="fab fa-youtube text-primary"></i>
+                </a>
+
+                <a
+                  class="w-7 xs:w-8 sm:w-9 md:w-10 h-7 xs:h-8 sm:h-9 md:h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition"
+                >
+                  <i class="fab fa-github text-primary"></i>
+                </a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-primary text-white">
+      <div class="max-w-7xl mx-auto px-6 py-12 grid gap-10 md:grid-cols-4">
+        <!-- Brand -->
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-2">
+            <div
+              class="w-8 h-8 bg-white rounded-full flex items-center justify-center"
+            >
+              <svg
+                class="w-[18px] h-[18px] text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M12 22V12M12 12C12 12 7 10 5 6c4 0 7 2 7 6zM12 12c0 0 5-2 7-6-4 0-7 2-7 6z"
+                />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold"> Plantify </span>
+          </div>
+          <p class="text-sm text-white/80">
+            Bring nature closer to your home with fresh, beautiful plants and
+            simple care tips.
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h3 class="font-semibold mb-4 text-lg">Quick Links</h3>
+          <ul class="space-y-2 text-white/80">
+            <li><a href="/index.html" class="hover:text-white">Home</a></li>
+            <li><a href="" class="hover:text-white">About Us</a></li>
+            <li><a href="Contact.html" class="hover:text-white">Contact</a></li>
+            <li>
+              <a href="plantPage.html" class="hover:text-white">Plants</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Categories -->
+        <div>
+          <h3 class="font-semibold mb-4 text-lg">Categories</h3>
+          <ul class="space-y-2 text-white/80">
+            <li><a href="#" class="hover:text-white">Indoor Plants</a></li>
+            <li><a href="#" class="hover:text-white">Outdoor Plants</a></li>
+            <li><a href="#" class="hover:text-white">Succulents</a></li>
+            <li><a href="#" class="hover:text-white">Accessories</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div>
+          <h3 class="font-semibold mb-4 text-lg">Stay Updated</h3>
+          <p class="text-sm text-white/80 mb-4">
+            Get plant tips and special offers directly to your inbox.
+          </p>
+          <div class="flex items-center bg-white rounded-full overflow-hidden">
+            <input
+              type="email"
+              placeholder="Your email"
+              class="px-4 py-2 w-full text-sm text-gray-800 outline-none"
+            />
+            <button class="bg-primary-dark px-4 py-2 text-sm text-white">
+              Join
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div
+        class="border-t border-white/20 py-4 text-center text-sm text-white/70"
+      >
+        © 2026 Plantify. All rights reserved.
+      </div>
+    </footer>
+    <script>
+      let menuOpen = false;
+      function toggleMenu() {
+        menuOpen = !menuOpen;
+        const menu = document.getElementById("mobileMenu");
+        const b1 = document.getElementById("bar1");
+        const b2 = document.getElementById("bar2");
+        const b3 = document.getElementById("bar3");
+        menu.style.maxHeight = menuOpen ? menu.scrollHeight + "px" : "0";
+        if (menuOpen) {
+          b1.style.transform = "translateY(6.5px) rotate(45deg)";
+          b2.style.opacity = "0";
+          b2.style.transform = "scaleX(0)";
+          b3.style.transform = "translateY(-6.5px) rotate(-45deg)";
+        } else {
+          b1.style.transform =
+            b2.style.opacity =
+            b2.style.transform =
+            b3.style.transform =
+              "";
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const html = document.documentElement;
+        const btn = document.getElementById("toggleTheme");
+
+        if (!btn) {
+          console.log("Button not found ❌");
+          return;
+        }
+
+        // Load saved theme
+        try {
+          const saved = localStorage.getItem("theme");
+          const prefersDark = window.matchMedia(
+            "(prefers-color-scheme: dark)",
+          ).matches;
+
+          if (saved === "dark" || (!saved && prefersDark)) {
+            html.classList.add("dark");
+          } else {
+            html.classList.remove("dark");
+          }
+        } catch {}
+
+        // Toggle
+        btn.addEventListener("click", () => {
+          console.log("clicked ✅"); // DEBUG
+
+          const isDark = html.classList.toggle("dark");
+
+          try {
+            localStorage.setItem("theme", isDark ? "dark" : "light");
+          } catch {}
+        });
+      });
+    </script>
+  </body>
+</html>

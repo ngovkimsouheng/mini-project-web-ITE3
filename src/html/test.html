@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plantify - Modern Plants</title>
+    <meta name="description" content="Discover modern plants at Plantify. Explore our curated collection of stylish and easy-to-care plants for your home.">
+    <meta name="keywords" content="modern plants, stylish plants, indoor plants, plant decor">
+    <meta name="author" content="Plantify">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Plantify - Modern Plants">
+    <meta property="og:description" content="Discover modern plants at Plantify. Explore our curated collection of stylish and easy-to-care plants for your home.">
+    <meta property="og:image" content="../../images/01.webp">
+    <meta property="og:url" content="https://plantify.com/modern-plants">
+    <meta property="og:type" content="website">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Plantify - Modern Plants">
+    <meta name="twitter:description" content="Discover modern plants at Plantify. Explore our curated collection of stylish and easy-to-care plants for your home.">
+    <meta name="twitter:image" content="../../images/01.webp">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ["Poppins", "sans-serif"] },
+            colors: {
+              primary: "#276843",
+              accent: "#6dbe8d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="font-sans bg-[#f8faf9] text-gray-900">
+    <!-- NAV -->
+    <header
+      class="fixed top-0 w-full bg-white/80 backdrop-blur border-b border-gray-100 z-50"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between"
+      >
+        <h1 class="font-semibold text-primary">GreenPetals</h1>
+        <div class="hidden md:flex items-center gap-4">
+          <nav class="flex gap-6 text-sm text-gray-500">
+            <a href="#">Home</a>
+            <a href="#" class="text-primary">Plants</a>
+            <a href="#">About</a>
+          </nav>
+          <button
+            id="theme-toggle"
+            class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+            aria-label="Toggle dark mode"
+          >
+            <!-- Sun icon for light mode -->
+            <svg id="sun-icon" class="w-5 h-5 text-gray-800 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+            </svg>
+            <!-- Moon icon for dark mode -->
+            <svg id="moon-icon" class="w-5 h-5 text-gray-800 dark:text-gray-200 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="pt-20">
+      <!-- HERO SPLIT -->
+      <section
+        class="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center"
+      >
+        <div class="space-y-6">
+          <h2 class="text-5xl font-semibold leading-tight">
+            Grow Your <br />
+            <span class="text-primary">Dream Garden</span>
+          </h2>
+          <p class="text-gray-500 max-w-md">
+            Handpicked plants designed to bring calm, beauty, and freshness into
+            your daily life.
+          </p>
+          <div class="flex gap-3">
+            <button class="bg-primary text-white px-6 py-3 rounded-xl">
+              Explore
+            </button>
+            <button class="border px-6 py-3 rounded-xl">Learn</button>
+          </div>
+        </div>
+
+        <div class="relative">
+          <img
+            src="/images/heroSEctionHomepage.jpg"
+            class="rounded-3xl h-[400px] w-full object-cover"
+          />
+          <div
+            class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow"
+          >
+            <p class="text-sm font-medium">200+ Plants</p>
+            <p class="text-xs text-gray-500">Available now</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CATEGORY CARDS -->
+      <section class="max-w-7xl mx-auto px-4 py-10 grid sm:grid-cols-3 gap-6">
+        <div
+          class="bg-white p-6 rounded-2xl shadow-sm text-center hover:shadow-md transition"
+        >
+          <p class="text-3xl">🌿</p>
+          <h3 class="mt-3 font-medium">Indoor</h3>
+        </div>
+        <div
+          class="bg-white p-6 rounded-2xl shadow-sm text-center hover:shadow-md transition"
+        >
+          <p class="text-3xl">🌳</p>
+          <h3 class="mt-3 font-medium">Outdoor</h3>
+        </div>
+        <div
+          class="bg-white p-6 rounded-2xl shadow-sm text-center hover:shadow-md transition"
+        >
+          <p class="text-3xl">🌵</p>
+          <h3 class="mt-3 font-medium">Succulent</h3>
+        </div>
+      </section>
+
+      <!-- PRODUCT GRID WITH OVERLAY -->
+      <section class="max-w-7xl mx-auto px-4 py-10">
+        <h2 class="text-2xl font-semibold mb-6">Popular Plants</h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="group relative rounded-2xl overflow-hidden">
+            <img src="/images/01.webp" class="h-60 w-full object-cover" />
+            <div
+              class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-4"
+            >
+              <div class="text-white">
+                <p class="font-medium">Monstera</p>
+                <p class="text-sm">$12</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="group relative rounded-2xl overflow-hidden">
+            <img src="/images/02.jpg" class="h-60 w-full object-cover" />
+            <div
+              class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-4"
+            >
+              <div class="text-white">
+                <p class="font-medium">Cactus</p>
+                <p class="text-sm">$8</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="group relative rounded-2xl overflow-hidden">
+            <img src="/images/03.jpg" class="h-60 w-full object-cover" />
+            <div
+              class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-4"
+            >
+              <div class="text-white">
+                <p class="font-medium">Ficus</p>
+                <p class="text-sm">$15</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="group relative rounded-2xl overflow-hidden">
+            <img src="/images/04.webp" class="h-60 w-full object-cover" />
+            <div
+              class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-end p-4"
+            >
+              <div class="text-white">
+                <p class="font-medium">Orchid</p>
+                <p class="text-sm">$18</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SPLIT FEATURE -->
+      <section
+        class="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center"
+      >
+        <img
+          src="/images/05.png"
+          class="rounded-3xl h-[350px] object-cover w-full"
+        />
+
+        <div>
+          <h2 class="text-3xl font-semibold mb-4">Plants made simple</h2>
+          <p class="text-gray-500 mb-6">
+            We help you choose the right plant and guide you every step of the
+            way.
+          </p>
+          <ul class="space-y-3 text-sm text-gray-600">
+            <li>✔ Easy care instructions</li>
+            <li>✔ Fast delivery</li>
+            <li>✔ Healthy guarantee</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CTA BANNER -->
+      <section class="bg-primary text-white py-14 text-center">
+        <h2 class="text-3xl font-semibold mb-4">Bring Life Into Your Space</h2>
+        <button class="bg-white text-primary px-6 py-3 rounded-xl">
+          Shop Now
+        </button>
+      </section>
+    </main>
+
+    <script>
+      // Dark mode toggle functionality
+      const themeToggle = document.getElementById('theme-toggle');
+      const sunIcon = document.getElementById('sun-icon');
+      const moonIcon = document.getElementById('moon-icon');
+
+      // Check for saved theme preference or default to light mode
+      const savedTheme = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const currentTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+
+      // Apply the current theme
+      if (currentTheme === 'dark') {
+        document.documentElement.classList.add('dark');
+        sunIcon.classList.add('hidden');
+        moonIcon.classList.remove('hidden');
+      } else {
+        document.documentElement.classList.remove('dark');
+        sunIcon.classList.remove('hidden');
+        moonIcon.classList.add('hidden');
+      }
+
+      // Toggle theme function
+      function toggleTheme() {
+        const isDark = document.documentElement.classList.contains('dark');
+        
+        if (isDark) {
+          document.documentElement.classList.remove('dark');
+          sunIcon.classList.remove('hidden');
+          moonIcon.classList.add('hidden');
+          localStorage.setItem('theme', 'light');
+        } else {
+          document.documentElement.classList.add('dark');
+          sunIcon.classList.add('hidden');
+          moonIcon.classList.remove('hidden');
+          localStorage.setItem('theme', 'dark');
+        }
+      }
+
+      // Add click event listener
+      themeToggle.addEventListener('click', toggleTheme);
+    </script>
+
+  </body>
+</html>
