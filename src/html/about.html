@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
     <title>About Us - Plantify</title>
     <meta
       name="description"
@@ -14,33 +16,66 @@
     />
     <meta name="author" content="Plantify" />
     <meta name="robots" content="index, follow" />
-    <!-- Open Graph -->
+
+    <!-- Open Graph (Telegram, Facebook, etc.) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Plantify" />
     <meta property="og:title" content="About Us - Plantify" />
     <meta
       property="og:description"
-      content="Learn about Plantify, your trusted source for beautiful plants. Discover our mission to bring nature closer to your home with fresh plants and care tips."
+      content="Learn about Plantify and our mission to bring nature closer to your home with fresh plants and simple care tips."
     />
-    <meta property="og:image" content="https://plantify-ite3.vercel.app/images/heroSEctionHomepage.jpg" />
+    <meta
+      property="og:url"
+      content="https://plantify-ite3.vercel.app/src/html/about.html"
+    />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Image (VERY IMPORTANT) -->
+    <meta
+      property="og:image"
+      content="https://plantify-ite3.vercel.app/images/heroSEctionHomepage.jpg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://plantify-ite3.vercel.app/images/heroSEctionHomepage.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Beautiful plants and greenery at Plantify" />
-    <meta property="og:url" content="https://plantify-ite3.vercel.app/about" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Plantify" />
+    <meta
+      property="og:image:alt"
+      content="Beautiful plants and greenery at Plantify"
+    />
+
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="About Us - Plantify" />
     <meta
       name="twitter:description"
-      content="Learn about Plantify, your trusted source for beautiful plants. Discover our mission to bring nature closer to your home with fresh plants and care tips."
+      content="Learn about Plantify and our mission to bring nature closer to your home with fresh plants and simple care tips."
     />
-    <meta name="twitter:image" content="https://plantify-ite3.vercel.app/images/heroSEctionHomepage.jpg" />
-    <meta name="twitter:image:alt" content="Beautiful plants and greenery at Plantify" />
+    <meta
+      name="twitter:image"
+      content="https://plantify-ite3.vercel.app/images/heroSEctionHomepage.jpg"
+    />
+
+    <!-- Fallback -->
+    <meta
+      name="image"
+      content="https://plantify-ite3.vercel.app/images/heroSEctionHomepage.jpg"
+    />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="../output.css" />
+
+    <!-- Icons -->
     <script
       src="https://kit.fontawesome.com/5ce14b4205.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Styles -->
     <style>
       html {
         scroll-behavior: smooth;
@@ -54,6 +89,7 @@
           transform: translateX(-50%);
         }
       }
+
       .animate-marquee {
         animation: marquee 18s linear infinite;
       }

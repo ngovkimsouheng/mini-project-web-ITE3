@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
     <title>Plantify - Beautiful Plants for Your Home</title>
     <meta
       name="description"
-      content="Welcome to Plantify - your ultimate destination for beautiful plants. Discover indoor, outdoor, succulents, and flowering plants for your home and garden."
+      content="Discover indoor, outdoor, succulents, and flowering plants to transform your home into a fresh, vibrant green space."
     />
     <meta
       name="keywords"
@@ -14,29 +16,62 @@
     />
     <meta name="author" content="Plantify" />
     <meta name="robots" content="index, follow" />
-    <!-- Open Graph -->
-    <meta property="og:title" content="Plantify - Beautiful Plants for Your Home" />
-    <meta
-      property="og:description"
-      content="Welcome to Plantify - your ultimate destination for beautiful plants. Discover indoor, outdoor, succulents, and flowering plants for your home and garden."
-    />
-    <meta property="og:image" content="https://plantify-ite3.vercel.app/images/heroSEctionHomepage.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Beautiful plants and greenery at Plantify" />
-    <meta property="og:url" content="https://plantify-ite3.vercel.app/" />
+
+    <!-- Open Graph (Telegram, Facebook, LinkedIn) -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Plantify" />
+    <meta
+      property="og:title"
+      content="Plantify - Beautiful Plants for Your Home"
+    />
+    <meta
+      property="og:description"
+      content="Discover indoor, outdoor, succulents, and flowering plants to transform your home into a fresh, vibrant green space."
+    />
+    <meta property="og:url" content="https://plantify-ite3.vercel.app/" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- IMPORTANT IMAGE -->
+    <meta
+      property="og:image"
+      content="https://plantify-ite3.vercel.app/images/heroSEctionHomepage.jpg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://plantify-ite3.vercel.app/images/heroSEctionHomepage.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Beautiful plants and greenery at Plantify"
+    />
+
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Plantify - Beautiful Plants for Your Home" />
+    <meta
+      name="twitter:title"
+      content="Plantify - Beautiful Plants for Your Home"
+    />
     <meta
       name="twitter:description"
-      content="Welcome to Plantify - your ultimate destination for beautiful plants. Discover indoor, outdoor, succulents, and flowering plants for your home and garden."
+      content="Discover indoor, outdoor, succulents, and flowering plants to transform your home into a fresh, vibrant green space."
     />
-    <meta name="twitter:image" content="https://plantify-ite3.vercel.app/images/heroSEctionHomepage.jpg" />
-    <meta name="twitter:image:alt" content="Beautiful plants and greenery at Plantify" />
+    <meta
+      name="twitter:image"
+      content="https://plantify-ite3.vercel.app/images/heroSEctionHomepage.jpg"
+    />
+
+    <!-- Extra fallback (helps Telegram sometimes) -->
+    <meta
+      name="image"
+      content="https://plantify-ite3.vercel.app/images/heroSEctionHomepage.jpg"
+    />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./src/output.css" />
+
     <style>
       html {
         scroll-behavior: smooth;
@@ -50,6 +85,7 @@
           transform: translateX(-50%);
         }
       }
+
       .animate-marquee {
         animation: marquee 18s linear infinite;
       }
